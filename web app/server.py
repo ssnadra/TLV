@@ -80,11 +80,7 @@ if __name__ == '__main__':
     dim = (224, 224)
     frames = 10
     channels = 3
-    model_path = './model/WLASL20c_model.h5'
     threshold = .50
-
-    # load model
-    model = load_model(model_path)
 
     # start application
     socketio.run(app=app, host='127.0.0.1', port=5000)
